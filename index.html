@@ -6,11 +6,18 @@
   <title>HubSpot Tracking Test</title>
 </head>
 <body>
-  <h1>HubSpot Tracking Code Test Page</h1>
-  <p>If everything is working, your HubSpot tracking code should load in the network tab.</p>
+    <h1>HubSpot Tracking Code Test Page</h1>
+    <p>If everything is working, your HubSpot tracking code should load in the network tab.</p>
 
   <!-- ✅ HubSpot Tracking Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/243514036.js"></script>
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/243514036.js"></script>
+
+    <script>
+    window.addEventListener('load', () => {
+    console.log("Checking HubSpot...");
+    console.log("window._hsq =", window._hsq);
+    });
+    </script>
 
 </body>
 </html>
