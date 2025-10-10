@@ -4,20 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HubSpot Tracking Test</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    pre { background: #f4f4f4; padding: 1rem; border-radius: 5px; overflow-x: auto; }
+  </style>
 </head>
 <body>
-    <h1>HubSpot Tracking Code Test Page</h1>
-    <p>If everything is working, your HubSpot tracking code should load in the network tab.</p>
+  <h1>Dutchie API Test</h1>
+  <button id="fetchBtn">Fetch Merchants</button>
+  <h2>Status:</h2>
+  <div id="status"></div>
+  <h2>Response:</h2>
+  <pre id="response"></pre>
 
-  <!-- ✅ HubSpot Tracking Code -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/243514036.js"></script>
+  <script src="test.js"></script>
+<!-- ✅ HubSpot Tracking Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/243514036.js"></script>
 
-    <script>
-    window.addEventListener('load', () => {
-    console.log("Checking HubSpot...");
-    console.log("window._hsq =", window._hsq);
-    });
-    </script>
+  <script>
+  window.addEventListener('load', () => {
+  console.log("Checking HubSpot...");
+  console.log("window._hsq =", window._hsq);
+  });
+  </script>
 
 </body>
 </html>
